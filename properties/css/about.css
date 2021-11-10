@@ -1,0 +1,140 @@
+.team {
+    text-align: center
+}
+
+.section {
+    padding: 60px 0
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 0
+}
+
+.team .team-item {
+    text-align: left;
+    margin-bottom: 30px
+}
+
+.team .team-item figure {
+    position: relative;
+    overflow: hidden
+}
+
+img {
+    max-width: 100%
+}
+
+.team .team-item figure figcaption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(9, 9, 9, .6);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.team .team-item figure figcaption .info {
+    position: absolute;
+    color: #fff;
+    float: left;
+    bottom: 80px;
+    left: 20px;
+    margin-left: -80px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.team .team-item figure:hover figcaption {
+    opacity: 1
+}
+
+.team .team-item figure:hover figcaption .info {
+    margin-left: 0
+}
+
+.team .team-item figure figcaption .info h3 {
+    font-size: 20px
+}
+
+.team .team-item figure figcaption .info p {
+    color: #fff
+}
+
+.team .team-item figure:hover figcaption .social {
+    margin-bottom: 0
+}
+
+.team .team-item figure figcaption .social {
+    position: absolute;
+    float: right;
+    bottom: 28px;
+    margin-bottom: -80px;
+    right: 20px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.team .team-item figure figcaption .social a {
+    color: #fff;
+    font-size: 15px;
+    width: 36px;
+    height: 36px;
+    background: #ff532b;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 2px
+}
+
+
+.pagination {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    background-color: #fff;
+    width: fit-content;
+    border-radius: 0.25rem;
+  }
+  
+  .crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+  }
+  
+  .crumb {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: currentColor;
+    border-radius: 0.2rem;
+    border: 0.0625rem solid #d7d7d7; /* 1px */
+  }
+  
+  .crumb__active{
+      color: #fdfdfd;
+      background-color: #ff532b;
+  }
+  .crumb:hover {
+    background-color: #1d1f20;
+    color: #fdfdfd;
+    border-color: #1d1f20;
+  }
+  
+  .crumb__prev { margin-right: 0.5rem; cursor: w-resize; }
+  .crumb__next { margin-left: 0.5rem; cursor: e-resize; }
